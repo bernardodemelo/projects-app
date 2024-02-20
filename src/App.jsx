@@ -3,20 +3,19 @@ import './App.css';
 import { Routes, Route } from "react-router-dom";
 
 /* PAGES */
-import ProjectsListPage from './pages/ProjectsListPage';
-import ProjectDetailsPage from './pages/ProjectDetailsPage';
-import AddProjectPage from './pages/AddProject';
-import EditProjectPage from './pages/EditProjectPage';
+import PlanetsListPage from "./pages/PlanetsListPage";
+import PlanetDetailsPage from "./pages/PlanetsDetailsPage";
+import AddPlanetPage from "./pages/AddPlanet";
+import EditPlanetPage from "./pages/EditPlanetPage";
 
 function App() {
-
   return (
     <main>
       <Routes>
-        <Route path="/" element={<ProjectsListPage />} />
-        <Route path="/projects/:id" element={<ProjectDetailsPage />} />
-        <Route path="/add-project" element={<AddProjectPage />} />
-        <Route path="/edit-project/:id" element={<EditProjectPage />} />
+        <Route path="/" element={<PlanetsListPage />} />
+        <Route path="/planets/:id" element={<PlanetDetailsPage />} />
+        <Route path="/add-planet" element={<AddPlanetPage />} />
+        <Route path="/edit-planet/:id" element={<EditPlanetPage />} />
       </Routes>
     </main>
   );
