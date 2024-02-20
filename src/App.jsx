@@ -13,13 +13,13 @@ function App() {
   return (
     <main>
       <Routes>
-        <Route path="/projects" element={<ProjectsListPage/>}/>
+        <Route path="/" element={<ProjectsListPage />} />
         <Route path="/projects/:id" element={<ProjectDetailsPage />} />
-        <Route path="/add-project" element={<AddProjectPage />}/>
-        <Route path="/edit-project/:id" element={<EditProjectPage/>}/>
+        <Route path="/add-project" element={<AddProjectPage />} />
+        <Route path="/edit-project/:id" element={<EditProjectPage />} />
       </Routes>
     </main>
-  )
+  );
 }
 
 export default App
